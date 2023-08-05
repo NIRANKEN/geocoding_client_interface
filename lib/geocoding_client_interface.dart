@@ -2,7 +2,7 @@ library geocoding_client_interface;
 
 import 'package:google_maps_flutter_platform_interface/google_maps_flutter_platform_interface.dart';
 
-import 'PlaceMark.dart';
+import 'place_mark.dart';
 
 abstract class GeocodingClient {
   const GeocodingClient();
