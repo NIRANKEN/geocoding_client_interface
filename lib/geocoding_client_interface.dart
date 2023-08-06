@@ -34,6 +34,10 @@ abstract class GeocodingClient extends PlatformInterface {
 class GeocodingClientDefault extends GeocodingClient {
   GeocodingClientDefault();
 
+  static void registerWith() {
+    GeocodingClient.instance = GeocodingClientDefault();
+  }
+
   static const int searchResultLimit = 5;
 
   @override
